@@ -14,3 +14,10 @@ export function titleChanged (id) {
   }
 }
 
+export function taskDeleted (id) {
+  console.log(id)
+  return {
+    type: actionTypes.taskDeleted, 
+    payload: id
+  }
+}
